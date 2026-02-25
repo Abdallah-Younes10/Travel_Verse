@@ -3,7 +3,7 @@ import React, { memo } from "react";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import cloud from "../../../Assets/videos/مشهد سحاب للمونتاج 4k(1080P_HD).mp4";
+import cloud from "../../../Assets/videos/cloud-scene-4k.mp4.mp4";
 import cloudPoster from "../../../Assets/images/watercolor-sky-with-clouds-wind-flow-background.jpg"; // صورة صغيرة كمؤشر للفيديو
 import style from "../../../Style/HomeStyle/HeroPlane.module.css";
 import plane from "../../../Assets/images/pexels-pascalr-113017-removebg-preview.png";
