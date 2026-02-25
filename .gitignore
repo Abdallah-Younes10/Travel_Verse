@@ -1,0 +1,46 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+.pnp/
+.pnp.js
+
+# =========================
+# Build / Production
+# =========================
+dist/
+build/
+.vite/
+
+# =========================
+# Testing
+# =========================
+coverage/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Assets (DO NOT TRACK LARGE FILES INDIVIDUALLY)
+# =========================
+# (Assets are now tracked via Git LFS)
+
+# =========================
+# Logs
+# =========================
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

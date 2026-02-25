@@ -1,0 +1,154 @@
+/* General Styles */
+.video_container {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+}
+
+.vid {
+     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+/* Number Style */
+.num {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 59%;
+    background-color: beige;
+    color: black;
+    font-size: 30px;
+}
+
+.num a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Row Layouts */
+.row_car, .row_plane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+/* Animation and Position for Plane */
+.row_plane img {
+    position: relative;
+    left: 16%;
+    transform: rotateZ(8deg);
+    animation:  wiggle 3s infinite ease-in-out;
+
+}
+
+/* @keyframes slideIn {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 16%;
+    }
+} */
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotateZ(-15deg) translateX(0);
+    }
+    50% {
+        transform: rotateZ(-15deg) translateX(30px);
+    }
+}
+
+/* Animation and Position for Car */
+.row_car img {
+    position: absolute;
+    left: -100%;
+    bottom: 30%;
+    max-width: 50%;
+    /* min-width: 30%; */
+    animation: slideInn 2s ease-out forwards;
+}
+
+@keyframes slideInn {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 20%;
+    }
+}
+
+/* Column Layouts */
+.col {
+    position: relative;
+    top: 25%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.container_text {
+    color: black;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: 0;
+    bottom: 0;
+}
+
+/* Text Styling */
+.small_text, .big_text {
+    /* background: aliceblue; */
+    padding: 20px;
+    width: fit-content;
+    border-radius: 15px 0px 15px;
+}
+
+/* Car Text Styling */
+.car {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    left: 23px;
+    position: relative;
+    bottom: -10%;
+}
